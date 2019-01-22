@@ -35,7 +35,7 @@ app.get( "/*", ( req, res ) => {
                 </StaticRouter>
             </ReduxProvider>
         );
-        const reactDom = renderToString( jsx );
+        const reactDom = renderToString( jsx ).replace( 'data-reactroot=""', "" );
 
         console.log( reactDom );
 
