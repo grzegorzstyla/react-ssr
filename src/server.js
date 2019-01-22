@@ -36,6 +36,9 @@ app.get( "/*", ( req, res ) => {
             </ReduxProvider>
         );
         const reactDom = renderToString( jsx );
+
+        console.log( reactDom );
+
         const reduxState = store.getState( );
         const helmetData = Helmet.renderStatic( );
 

@@ -16,5 +16,7 @@ const jsx = (
     </ReduxProvider>
 );
 
+debugger;
+
 const app = document.getElementById( "app" );
 ReactDOM.hydrate( jsx, app );
